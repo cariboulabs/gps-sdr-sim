@@ -1,3 +1,6 @@
+!hackrf_transfer.exe
+!libhackrf.dll
+
 # Object files
 *.o
 *.ko
