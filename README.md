@@ -1,3 +1,21 @@
+# Cariboulabs
+
+## Usage:
+
+make sure you have mingw installed for gcc, then:
+
+```
+gcc gpssim.c -lm -O3 -o gps-sdr-sim (YES, COMPILED ON THIS COMPUTER ASWELL)
+
+./gps-sdr-sim -v -e hour3110.24n -l 18.515989838509896,-69.93560577284794,0.0 -b 8 -s 2600000 -t 2024/11/06,08:00:00
+
+hackrf_transfer -t gpssim.bin -f 1575420000 -s 2600000 -a 1 -x 2
+```
+
+note:</br>
+hackrf is a submodule of this git. you can create `libhackrf.dll` and `hackrf_transfer.exe` in hackrf/host.
+
+
 # GPS-SDR-SIM
 
 GPS-SDR-SIM generates GPS baseband signal data streams, which can be converted 
